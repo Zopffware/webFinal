@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <title>Contact Us</title>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="specs.html">
+                    <li>Our Packages</li>
+                </a>
+                <a href="about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
     </head>
     <body>
         
+        <div id='contactForm'>
+            <form action="action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="armenia">Armenia</option>
+                    <option value="azerbaijan">Azerbaijan</option>
+                    <option value="belarus">Belarus</option>
+                    <option value="estonia">Estonia</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="kazakhstan">Kazakhstan</option>
+                    <option value="kygyzstan">Kygyzstan</option>
+                    <option value="latvia">Latvia</option>
+                    <option value="lithuania">Lithuania</option>
+                    <option value="moldova">Moldova</option>
+                    <option value="russia">Russia</option>
+                    <option value="tajikistan">Tajikistan</option>
+                    <option value="turkmenistan">Turkmenistan</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="unitedstates">United States</option>
+                    <option value="uzbekistan">Uzbekistan</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </body>
 </html>
