@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-        <link href='css/style.css' rel='stylesheet' />
-    <h1>The Cagers Inc.</h1>
-    <h3>
-        <em>We 'shop Cage so you don't have too!</em>
-    </h3>
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="specs.html">
-                <li>Our Packages</li>
-            </a>
-            <a href="about.html">
-                <li>About Us</li>
-            </a>
-            <a href="contact.html">
-                <li>Contact Us</li>
-            </a>
-        </ul>
-    </nav>
+    <head>
 
-</head>
+        <h1 class = "intro">The Cagers Inc.</h1>
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href='style.css' rel='stylesheet' />
 
-<body>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="slideshowPics/canyonNic.jpg" style="height:300px">
-            <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="slideshowPics/familyNic.jpg" style="height:300px">
-            <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="slideshowPics/jurassicNic.jpg" style="height:300px">
-            <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="slideshowPics/marsNic.jpg" style="height:300px">
-            <div class="text"></div>
-        </div>
-    </div>
-    <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-        <script src="scripts/slideShow.js"></script>
-</body>
+        <img src = "././images/logo_1.png" />
+        <h3 id = "slogan">We 'shop Cage so you don't have too!</h3>
 
+        <nav>
+            <ul class = "bar">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="specs.html">
+                    <li>Our Packages</li>
+                </a>
+                <a href="about.html">
+                    <li>About Us</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+
+    </head>
+
+    <body>
+        <p class = "content"> Welcome to The Cagers Inc. home base! We are so glad to have you here. Please, take your time and look 
+            around, find something you like (there has to be at least <em>one</em> thing you like, right?) and then give us your money
+            because you obviously have too much of it if you even consider buying something from us...not that we mind.<br/><br/>
+
+            But I guess before you give us your money, you need to know what we do. Well, simply put, we photoshop pictures of Nicolas Cage onto various
+            objects, people, and places. Why?...well, because why not? Just take a look at how awesome our slideshow is!<br/><br/>
+
+            It's better if you stop asking questions. You won't get good, or even sensical, answers. So go forth and explore!
+        </p>
+
+        <div id="slideshow"> 
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 5</div> -->
+                <img src="slideshowPics/canyonNic.jpg" style="height:300px">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 5</div> -->
+                <img src="slideshowPics/familyNic.jpg" style="height:300px">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 5</div> -->
+                <img src="slideshowPics/jurassicNic.jpg" style="height:300px">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">4 / 5</div> -->
+                <img src="slideshowPics/marsNic.jpg" style="height:300px">
+                <div class="text"></div>
+            </div>
+        </div>
+        <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script src="scripts/slideShow.js"></script>
+        
+        <footer>
+                <h5>Copyright &copy;2018 by The Cagers Inc.</h5>
+        </footer>
+    </body>
 </html>
