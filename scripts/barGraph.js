@@ -1,3 +1,5 @@
+var canvas = document.getElementById('satisfaction');
+var ctx = canvas.getContext('2d');
 function drawGraph(x, y, width, height, barSpacing, withBorder, title, yLabel, ctx, data) {
     var titleHeight = 20;
     var labelHeight = 20;
@@ -23,12 +25,12 @@ function drawGraph(x, y, width, height, barSpacing, withBorder, title, yLabel, c
                      graphWidth / data.length - barSpacing,
                      graphHeight * item[1] / maxBarHeight);
         ctx.save();
-        ctx.fillStyle = "#000";
+        ctx.fillStyle = "#FFF";
         ctx.fillText(item[0], (graphWidth / data.length + 1) / 2 + (graphWidth / data.length) * index, (graphHeight + height - titleHeight) / 2);
         ctx.restore();
     });
     
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = "#FFF";
     ctx.textAlign = "right";
     var scale = 1;
     while (graphHeight / (maxBarHeight / scale) <= 10) {
